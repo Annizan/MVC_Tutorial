@@ -1,0 +1,25 @@
+﻿@using HelloWorld.Models
+
+@{
+    Layout = null;
+    var client = ViewData["ClientTrouve"] as Client;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ChercheClient</title>
+</head>
+<body>
+<div>
+    Vous avez cherché le client @ViewData["Nom"]. Voici les informations du client : 
+</div><br />
+<div>
+<p> Nom : @client.Nom</p>
+<p>Age : @client.Age</p>
+</div>
+</body>
+</html>
